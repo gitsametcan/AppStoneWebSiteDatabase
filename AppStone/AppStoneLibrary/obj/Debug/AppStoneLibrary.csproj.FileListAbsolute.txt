@@ -1,0 +1,8 @@
+C:\Users\sametcan\Desktop\DataBasePRoject\AppStoneWebSiteDatabase\AppStone\AppStoneLibrary\bin\Debug\AppStoneLibrary.dll
+C:\Users\sametcan\Desktop\DataBasePRoject\AppStoneWebSiteDatabase\AppStone\AppStoneLibrary\bin\Debug\AppStoneLibrary.pdb
+C:\Users\sametcan\Desktop\DataBasePRoject\AppStoneWebSiteDatabase\AppStone\AppStoneLibrary\bin\Debug\SametLibrary.dll
+C:\Users\sametcan\Desktop\DataBasePRoject\AppStoneWebSiteDatabase\AppStone\AppStoneLibrary\obj\Debug\AppStoneLibrary.csproj.AssemblyReference.cache
+C:\Users\sametcan\Desktop\DataBasePRoject\AppStoneWebSiteDatabase\AppStone\AppStoneLibrary\obj\Debug\AppStoneLibrary.csproj.CoreCompileInputs.cache
+C:\Users\sametcan\Desktop\DataBasePRoject\AppStoneWebSiteDatabase\AppStone\AppStoneLibrary\obj\Debug\AppStoneLibrary.csproj.CopyComplete
+C:\Users\sametcan\Desktop\DataBasePRoject\AppStoneWebSiteDatabase\AppStone\AppStoneLibrary\obj\Debug\AppStoneLibrary.dll
+C:\Users\sametcan\Desktop\DataBasePRoject\AppStoneWebSiteDatabase\AppStone\AppStoneLibrary\obj\Debug\AppStoneLibrary.pdb

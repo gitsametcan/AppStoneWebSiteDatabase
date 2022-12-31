@@ -8,6 +8,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AppStoneWebSite", "AppStoneWebSite\", "{84E321C4-AE0E-4D54-BC53-258F0CD57C0B}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{a216bad7-3da9-43d6-962e-6211314de4d2}|AppStoneLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_61145"
 		Debug.AspNetCompiler.PhysicalPath = "AppStoneWebSite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61145\"
@@ -23,6 +24,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AppStoneWebSite", "AppStone
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "61145"
+		SlnRelativePath = "AppStoneWebSite\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
