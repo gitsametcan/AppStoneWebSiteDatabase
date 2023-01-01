@@ -4,7 +4,7 @@
 <script src="scripts/kullanici/anaSayfa.js"></script>
 
     <div class="pagetitle">
-      <h1>Ana Sayfa</h1>
+      <h1>Your Projects</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
@@ -14,27 +14,11 @@
       </nav>
     </div>
 
-<div class="search-bar">
-    <div class="row">
-
-        <div class="col" runat="server" id="divArama">                        
-        </div>
-        <div class="col-auto" id="aramaButonu" runat="server">
-                    
-        </div>
 
 
-    </div>
-</div>
-<br/>
-
-
-<div class="card">
-    <div class="card-body pt-3">
         <div id="divIcerik" class="icerikler" runat="server"></div>
 
-    </div>
-</div>
+
 
 
 <div class="card">
