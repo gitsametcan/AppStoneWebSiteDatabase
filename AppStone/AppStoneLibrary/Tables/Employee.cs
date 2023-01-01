@@ -15,22 +15,51 @@ namespace AppStoneLibrary.Tables
     {
         public long EmpId { get; set; }
 
-        public string Email { get; set; }
+        public string FirstName { get; set; }
 
-        public string Password { get; set; }
+        public string LastName { get; set; }
 
+        public string Department { get; set; }
+
+        public DateTime Birthdate { get; set; }
+
+        public long Age { get; set; }
+
+        public long HourlyRate { get; set; }
+
+        public string EmploymentType { get; set; }
+
+        public string City { get; set; }
+
+        public string Street { get; set; }
+
+        public long HouseNumber { get; set; }
+
+        public string Gender { get; set; }
+
+        public long MgrId { get; set; }
 
         private void fillFromDataRow(DataRow dr)
         {
             EmpId = GenelParser.ParseLong(dr["EmpId"].ToString());
-            Email = dr["Email"].ToString();
-            Password = dr["Password"].ToString();
+            FirstName = dr["FirstName"].ToString();
+            LastName = dr["LastName"].ToString();
+            Department = dr["Department"].ToString();
+            Birthdate = GenelParser.ParseDateTime(dr["Birthdate"].ToString());
+            Age = GenelParser.ParseLong(dr["Age"].ToString());
+            HourlyRate = GenelParser.ParseLong(dr["HourlyRate"].ToString());
+            EmploymentType = dr["EmploymentType"].ToString();
+            City = dr["City"].ToString();
+            Street = dr["Street"].ToString();
+            HouseNumber = GenelParser.ParseLong(dr["HouseNumber"].ToString());
+            Gender = dr["Gender"].ToString();
+            MgrId = GenelParser.ParseLong(dr["MgrId"].ToString());
         }
 
-        public static Employee Giris(string ePosta, string sifre)
+        public static Employee Giris(long id)
         {
 
-            DataTable dt = Islemler.Sorgu("Select * from Account where Email = @1 and Password = @2", new object[] { ePosta, sifre });
+            DataTable dt = Islemler.Sorgu("Select * from Employee where EmpId = @1", new object[] { id });
 
             if (dt.Rows.Count > 0)
             {
@@ -41,7 +70,7 @@ namespace AppStoneLibrary.Tables
                 return employee;
             }
             else
-                return new Employee() { Email = "", Password = ""};
+                return new Employee() { EmpId = -1};
         }
     }
 }

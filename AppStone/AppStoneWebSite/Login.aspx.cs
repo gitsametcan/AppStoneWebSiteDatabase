@@ -19,9 +19,9 @@ public partial class Login : System.Web.UI.Page
     public string KullaniciGiris(string ePosta, string sifre)
     {
 
-        SessionObjects.EmployeeObject = Employee.Giris(ePosta, sifre);
+        SessionObjects.AccountObject = Account.Giris(ePosta, sifre);
 
-        if (SessionObjects.EmployeeObject.EmpId <= 0)
+        if (SessionObjects.AccountObject.EmpId <= 0)
             throw new Exception("Kullanıcı adı ve/veya şifre yanlış!");
 
         return "Default.aspx";

@@ -9,6 +9,11 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        welcome.InnerHtml = "Welcome " + SessionObjects.EmployeeObject.Email;
+        if (SessionObjects.AccountObject.EmpId < 1)
+            Page.ClientScript.RegisterStartupScript(GetType(), "LoginSayfasinaYonlendir_JS", "window.location = 'login.aspx';", true);
+
+        Employee employee = Employee.Giris(SessionObjects.AccountObject.EmpId);
+
+
     }
 }

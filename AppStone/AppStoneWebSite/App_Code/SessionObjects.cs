@@ -9,21 +9,21 @@ using AppStoneLibrary.Tables;
 public class SessionObjects
 {
    
-    public static Employee EmployeeObject
+    public static Account AccountObject
     {
         get
         {
-            if (HttpContext.Current.Session["EmployeeObject"] == null)
-                HttpContext.Current.Session.Add("EmployeeObject", new Employee());
+            if (HttpContext.Current.Session["AccountObject"] == null)
+                HttpContext.Current.Session.Add("AccountObject", new Account());
 
-            return (Employee)HttpContext.Current.Session["EmployeeObject"];
+            return (Account)HttpContext.Current.Session["AccountObject"];
 
         }
 
 
         set
         {
-            HttpContext.Current.Session.Add("EmployeeObject", value);
+            HttpContext.Current.Session.Add("AccountObject", value);
         }
     }
 }
