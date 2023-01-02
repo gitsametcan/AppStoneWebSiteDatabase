@@ -67,28 +67,33 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Company</div>
-                    <div class="col-lg-9 col-md-8">Lueilwitz, Wisoky and Leuschke</div>
+                    <div class="col-lg-3 col-md-4 label">Department</div>
+                    <div class="col-lg-9 col-md-8" id="department" runat="server">Lueilwitz, Wisoky and Leuschke</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Job</div>
-                    <div class="col-lg-9 col-md-8">Web Designer</div>
+                    <div class="col-lg-3 col-md-4 label">BirthDate</div>
+                    <div class="col-lg-9 col-md-8" id="birthdate" runat="server">Web Designer</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Country</div>
-                    <div class="col-lg-9 col-md-8">USA</div>
+                    <div class="col-lg-3 col-md-4 label">Hourly Rate</div>
+                    <div class="col-lg-9 col-md-8" id="hourlyrate" runat="server">USA</div>
                   </div>
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Address</div>
-                    <div class="col-lg-9 col-md-8">A108 Adam Street, New York, NY 535022</div>
+                    <div class="col-lg-9 col-md-8" id="address" runat="server">A108 Adam Street, New York, NY 535022</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Phone</div>
-                    <div class="col-lg-9 col-md-8">(436) 486-3538 x29071</div>
+                    <div class="col-lg-3 col-md-4 label">EmploymentType</div>
+                    <div class="col-lg-9 col-md-8" id="emptip" runat="server">(436) 486-3538 x29071</div>
+                  </div>
+
+                    <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Managed By</div>
+                    <div class="col-lg-9 col-md-8" id="manager" runat="server">(436) 486-3538 x29071</div>
                   </div>
 
                   <div class="row">

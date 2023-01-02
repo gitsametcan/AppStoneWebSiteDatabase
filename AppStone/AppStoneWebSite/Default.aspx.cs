@@ -23,8 +23,8 @@ public partial class _Default : System.Web.UI.Page
         solUst.InnerHtml = solUstOlustur(employee);
         kullaniciSayfasiLabel.InnerHtml = kullaniciSayfaLabelOlustur();
 
-        //if (SessionNesneleri.KullaniciObj.Tip == KullaniciTip.Admin)
-        //    admin.InnerHtml = adminLabelOlustur();
+        if (!(employee.MgrId>0))
+            admin.InnerHtml = adminLabelOlustur();
 
         modulYukle(modulAdi);
 

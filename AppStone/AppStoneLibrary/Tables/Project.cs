@@ -65,6 +65,24 @@ namespace AppStoneLibrary.Tables
                 return new Project() { ProjId = -1 };
         }
 
+        public static List<Project> TumunuGetir()
+        {
+            var projects = new List<Project>();
+
+            DataTable dt = Islemler.Sorgu("Select * from Project", new object[] { });
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                Project project = new Project();
+
+                project.fillFromDataRow(dr);
+
+                projects.Add(project);
+            }
+
+            return projects;
+        }
+
         public static string projectHtml(Project project)
         {
             StringBuilder sb = new StringBuilder();

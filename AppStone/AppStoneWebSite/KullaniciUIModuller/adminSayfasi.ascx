@@ -16,6 +16,7 @@
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">İçerikler</button>
   </li>
 </ul>
+
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <div id="kullanicilar" runat="server"> </div>

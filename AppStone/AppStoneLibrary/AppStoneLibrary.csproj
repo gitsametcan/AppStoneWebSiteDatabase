@@ -48,6 +48,7 @@
     <Compile Include="Tables\Account.cs" />
     <Compile Include="Tables\Employee.cs" />
     <Compile Include="Tables\Project.cs" />
+    <Compile Include="Tables\Sale.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

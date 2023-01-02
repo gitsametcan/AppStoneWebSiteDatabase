@@ -7,6 +7,7 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using AppStoneLibrary.Tables;
 
 [AjaxNamespace("ADMINSAYFASI_AJAX")]
 public partial class KullaniciUIModuller_adminSayfasi : System.Web.UI.UserControl
@@ -14,6 +15,23 @@ public partial class KullaniciUIModuller_adminSayfasi : System.Web.UI.UserContro
     protected void Page_Load(object sender, EventArgs e)
     {
         Utility.RegisterTypeForAjax(typeof(KullaniciUIModuller_adminSayfasi), Page);
+
+        List<Sale> allSales = Sale.TumunuGetir();
+        List<Project> allProjects = Project.TumunuGetir();
+
+        StringBuilder sbs = new StringBuilder();
+        StringBuilder sbp = new StringBuilder();
+
+
+        foreach (Sale sale in allSales)
+            sbs.Append(Sale.saleHtml(sale));
+
+        foreach (Project project in allProjects)
+            sbp.Append(Project.projectHtml(project));
+
+        icerikler.InnerHtml = sbs.ToString();
+        kullanicilar.InnerHtml = sbp.ToString();
+
 
         //if (SessionNesneleri.KullaniciObj.Tip != KullaniciTip.Admin)
          //   Page.ClientScript.RegisterStartupScript(GetType(), "LoginSayfasinaYonlendir_JS", "window.location = 'login.aspx';", true);
