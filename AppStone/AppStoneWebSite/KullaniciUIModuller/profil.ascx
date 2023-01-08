@@ -57,13 +57,14 @@
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <div id="takipEdilenler" runat="server"> 
           <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label w-100" align="center">Project Id</label>
+                <input type ="text" class="form-control" id="StarDate" placeholder="Please Integer" value="">
+            </div>
+          <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label w-100" align="center">Project Name</label>
                 <input type ="text" class="form-control" id="ProjName" placeholder="Project Name" value="">
             </div>
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label w-100" align="center">Project Start Date</label>
-                <input type ="text" class="form-control" id="StarDate" placeholder="YYYY-MM-DD" value="">
-            </div>
+              
               <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label w-100" align="center">Project End Date</label>
                 <input type ="text" class="form-control" id="EndDate" placeholder="YYYY-MM-DD" value="">
@@ -109,6 +110,11 @@
 
   </div>
   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+       <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label w-100" align="center">Sale Id</label>
+                <input type ="text" class="form-control" id="StarDateCon" placeholder="Give Integer" value="">
+            </div>
       <div class="mb-3">
            <label for="exampleFormControlInput1" class="form-label w-100" align="center">Delivery Date</label>
                 <input type ="text" class="form-control" id="DeliveryDate" placeholder="YYYY-MM-DD" value="">
@@ -126,10 +132,7 @@
                   <label for="exampleFormControlInput1" class="form-label w-100" align="center">Price</label>
                 <input type ="text" class="form-control" id="TotalPrice" placeholder="Total Price" value="">
             </div>
-             <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label w-100" align="center">Conctract Start Date</label>
-                <input type ="text" class="form-control" id="StarDateCon" placeholder="YYYY-MM-DD" value="">
-            </div>
+            
               <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label w-100" align="center">Conctract End Date</label>
                 <input type ="text" class="form-control" id="EndDateCon" placeholder="YYYY-MM-DD" value="">

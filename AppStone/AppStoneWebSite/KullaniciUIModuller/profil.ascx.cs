@@ -20,50 +20,72 @@ public partial class KullaniciUIModuller_profil : System.Web.UI.UserControl
 
         Employee employee = Employee.Giris(SessionObjects.AccountObject.EmpId);
 
- 
 
-        /*Kullanici kullanici = Kullanici.Getir(SessionNesneleri.KullaniciObj.Id);
-
-        takipEdilenler.InnerHtml = divIcerikTakipEdilenler(kullanici);
-        takipEdenler.InnerHtml = divIcerikTakipEdenler(kullanici);
-        fotovead.InnerHtml = adVeFotoAyarla(kullanici);
-        fotoVeBilgi.InnerHtml = fotoVeBilgiGuncelle(kullanici);
-        */
 
 
     }
 
-    private string fotoVeBilgiGuncelle(Employee employee)
+    [AjaxMethod(HttpSessionStateRequirement.ReadWrite)]
+    public string addProject(string ProjName, long StarDate, string EndDate)
     {
-        StringBuilder sb = new StringBuilder();
+        Project project = new Project();
 
-        //AD
-        sb.Append("<div class=\"row mb-3\">");
-        sb.Append("    <label for=\"txtAd\" class=\"col-md-4 col-lg-3 col-form-label\">İsim</label>");
-        sb.Append("    <div class=\"col-md-8 col-lg-9\">");
-        sb.Append("        <input name = \"txtAd\" type=\"text\" class=\"form-control\" id=\"txtAd\" value=\"" + employee.FirstName + "\">");
-        sb.Append("    </div>");
-        sb.Append("</div>");
-        //Soyad
-        sb.Append("<div class=\"row mb-3\">");
-        sb.Append("    <label for=\"txtSoyad\" class=\"col-md-4 col-lg-3 col-form-label\">Soyisim</label>");
-        sb.Append("    <div class=\"col-md-8 col-lg-9\">");
-        sb.Append("        <input name = \"txtSoyad\" type=\"text\" class=\"form-control\" id=\"txtSoyad\" value=\"" + employee.LastName + "\">");
-        sb.Append("    </div>");
-        sb.Append("</div>");
-        //Mail
-        sb.Append("<div class=\"row mb-3\">");
-        sb.Append("    <label for=\"txtMail\" class=\"col-md-4 col-lg-3 col-form-label\">Email</label>");
-        sb.Append("    <div class=\"col-md-8 col-lg-9\">");
-        sb.Append("        <input name = \"txtMail\" type=\"text\" class=\"form-control\" id=\"txtMail\" value=\"" + employee.Street + "\">");
-        sb.Append("    </div>");
-        sb.Append("</div>");
-        //Buton
-        sb.Append("<div class=\"text-center\">");
-        sb.Append("    <button type = \"submit\" class=\"btn btn-primary\" onclick=\"kaydet(" + employee.City + ");\">Güncelle</button>");
-        sb.Append("</div>");
+        project.ProjName = ProjName;
+        project.ProjId = StarDate;
+        project.EndDate = DateTime.ParseExact(EndDate, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
 
-        return sb.ToString();
+        project.Add();
+
+        return "ss";
+    }
+
+    [AjaxMethod(HttpSessionStateRequirement.ReadWrite)]
+    public string addCustomer(string CmpName, string City, string Street, long Housenumber, string Email, long TelNumber)
+    {
+        Customer customer = new Customer();
+
+        customer.CmpName = CmpName;
+        customer.City = City;
+        customer.Street = Street;
+        customer.Housenumber = Housenumber;
+        
+
+        customer.Add(Email,TelNumber);
+
+        return "ss";
+    }
+
+    [AjaxMethod(HttpSessionStateRequirement.ReadWrite)]
+    public string addSalCon(string DeliveryDate, string Company, long ProjId, long TotalPrice, long StarDateCon, string EndDateCon, long cstId)
+    {
+        Sale sale = new Sale();
+
+        sale.SaleId = StarDateCon;
+        sale.DeliveryDate = DateTime.ParseExact(DeliveryDate, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+        sale.Company = Company;
+        sale.ProjId = ProjId;
+        sale.TotalPrice = TotalPrice;
+        DateTime EndDateC = DateTime.ParseExact(EndDateCon, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+
+
+        sale.Add(EndDateC, cstId);
+
+        return "ss";
+    }
+
+    [AjaxMethod(HttpSessionStateRequirement.ReadWrite)]
+    public string addPayment(string Amount, string date, long SaleId, long CstID)
+    {
+        Payment payment = new Payment();
+
+        payment.Amount= Amount;
+        payment.PaymentDate = DateTime.ParseExact(date, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+        payment.SaleId = SaleId;
+        payment.ContractId = CstID;
+        
+        payment.Add();
+
+        return "ss";
     }
 
 }

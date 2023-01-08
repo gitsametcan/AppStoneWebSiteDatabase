@@ -83,6 +83,12 @@ namespace AppStoneLibrary.Tables
             return projects;
         }
 
+        public void Add()
+        {
+            Islemler.SorguDisi("INSERT INTO Project(ProjName, ProjId, EndDate) " +
+                "values (@1 , @2 , @3)", new object[] { ProjName, ProjId, EndDate});
+        }
+
         public static string projectHtml(Project project)
         {
             StringBuilder sb = new StringBuilder();

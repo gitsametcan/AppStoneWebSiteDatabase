@@ -223,12 +223,6 @@
         
       </li>
 
-        <li class="nav-item">
-        <a class="nav-link collapsed" href="Default.aspx?s=takiplesme">
-          <i class="bi bi-question-circle"></i>
-          <span>Function</span>
-        </a>
-      </li>
        <li class="nav-item">
         <a class="nav-link collapsed" href="Default.aspx?s=profil">
           <i class="bi bi-person"></i>

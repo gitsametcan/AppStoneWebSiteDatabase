@@ -72,5 +72,20 @@ namespace AppStoneLibrary.Tables
 
             return sb.ToString();
         }
+
+        public void Add(string mail, long tel)
+        {
+            Islemler.SorguDisi("INSERT INTO Customer(CmpName, City, Street, Housenumber) " +
+                "values (@1 , @2 , @3 , @4)", new object[] { CmpName, City, Street,Housenumber });
+
+            DataTable dt = Islemler.Sorgu("Select CstId from Customer where CmpName = @1 and City=@2 and Street=@3 and Housenumber=@4", new object[] { CmpName, City, Street, Housenumber });
+            DataRow dr = dt.Rows[0];
+            long id = GenelParser.ParseLong(dr["CstId"].ToString());
+
+
+
+            Islemler.SorguDisi("INSERT INTO ContactInfo(CstId, Email, TelNumber) " +
+                "values (@1 , @2 , @3)", new object[] { id, mail, tel });
+        }
     }
 }

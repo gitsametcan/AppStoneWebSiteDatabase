@@ -116,10 +116,10 @@ namespace AppStoneLibrary.Tables
             sb.Append("        <input name = \"txtAd\" type=\"text\" class=\"form-control\" id=\"HourlyRate\" value=\"" + employee.HourlyRate + "\">");
             sb.Append("    </div>");
             sb.Append("<div><h1>Birthdate: " + employee.Birthdate.ToString("d") + "(" + employee.Age.ToString() + ")" + "</h1></div>");
-            sb.Append("<div class=\"text-center\">");
-            sb.Append(" <button type=\"button\" class=\"btn btn-primary btn-block mb-4\" id=\"blokKaldirButonu_" + employee.EmpId + "\" onclick=\"modalGoster(" + employee.EmpId + ");\">Update</button>");
+            sb.Append("<div>");
+            sb.Append(" <button type=\"button\" class=\"btn btn-primary btn-block mb-4\" onclick=\"update();\">Update</button>");
             sb.Append("</div>");
-
+            
             sb.Append("</div>");
             sb.Append("</div>");
 

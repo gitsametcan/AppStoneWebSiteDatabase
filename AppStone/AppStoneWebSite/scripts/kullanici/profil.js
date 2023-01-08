@@ -2,8 +2,7 @@
 
 
     beklemeyeAl();
-    ADMINSAYFASI_AJAX.addEmployee($("#fName").val(), $("#lName").val(), $("#Department").val(), $("#BirthDate").val(), $("#HourlyRate").val(),
-        $("#City").val(), $("#Street").val(), $("#HouseNumber").val(), $("#Gender").val(), _addProject);
+    PROFIL_AJAX.addProject($("#ProjName").val(), $("#StarDate").val(), $("#EndDate").val(), _addProject);
 }
 
 function _addProject() {
@@ -15,8 +14,8 @@ function addSalCon() {
 
 
     beklemeyeAl();
-    ADMINSAYFASI_AJAX.addEmployee($("#fName").val(), $("#lName").val(), $("#Department").val(), $("#BirthDate").val(), $("#HourlyRate").val(),
-        $("#City").val(), $("#Street").val(), $("#HouseNumber").val(), $("#Gender").val(), _addSalCon);
+    PROFIL_AJAX.addSalCon($("#DeliveryDate").val(), $("#Company").val(), $("#ProjId").val(), $("#TotalPrice").val(), $("#StarDateCon").val(),
+        $("#EndDateCon").val(), $("#CstId").val(), _addSalCon);
 }
 
 function _addSalCon() {
@@ -27,8 +26,7 @@ function addCustomer() {
 
 
     beklemeyeAl();
-    ADMINSAYFASI_AJAX.addEmployee($("#fName").val(), $("#lName").val(), $("#Department").val(), $("#BirthDate").val(), $("#HourlyRate").val(),
-        $("#City").val(), $("#Street").val(), $("#HouseNumber").val(), $("#Gender").val(), _addCustomer);
+    PROFIL_AJAX.addCustomer($("#CmpName").val(), $("#City").val(), $("#Street").val(), $("#Housenumber").val(), $("#Email").val(), $("#TelNumber").val(), _addCustomer);
 }
 
 function _addCustomer() {
@@ -39,8 +37,7 @@ function addPayment() {
 
 
     beklemeyeAl();
-    ADMINSAYFASI_AJAX.addEmployee($("#fName").val(), $("#lName").val(), $("#Department").val(), $("#BirthDate").val(), $("#HourlyRate").val(),
-        $("#City").val(), $("#Street").val(), $("#HouseNumber").val(), $("#Gender").val(), _addPayment);
+    PROFIL_AJAX.addPayment($("#Amount").val(), $("#PaymentDate").val(), $("#SaleId").val(), $("#ContractId").val(),_addPayment);
 }
 
 function _addPayment() {

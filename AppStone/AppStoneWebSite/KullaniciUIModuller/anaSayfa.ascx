@@ -9,7 +9,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
           <li class="breadcrumb-item">Users</li>
-          <li class="breadcrumb-item active">Paylaşılanlar</li>
+          <li class="breadcrumb-item active">Projects</li>
         </ol>
       </nav>
     </div>

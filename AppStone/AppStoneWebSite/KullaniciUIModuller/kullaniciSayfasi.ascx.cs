@@ -27,6 +27,10 @@ public partial class KullaniciUIModuller_kullaniciSayfasi : System.Web.UI.UserCo
         manager.InnerHtml = employee.MgrId.ToString();
         kullaniciMail.InnerHtml = SessionObjects.AccountObject.Email;
 
+        Div1.InnerHtml = Employee.employeeHtmlUpdatable(employee);
+
+
+
         /*
         Kullanici kullanici = Kullanici.Getir(GenelParser.ParseInt(Request.QueryString["id"]));
         //Kullanici kullanici = Kullanici.Getir(SessionNesneleri.KullaniciObj.Id);
@@ -35,6 +39,20 @@ public partial class KullaniciUIModuller_kullaniciSayfasi : System.Web.UI.UserCo
         kullaniciIsmi.InnerHtml = kullanici.Ad + " " + kullanici.Soyad;
         kullaniciMail.InnerHtml = kullanici.EPosta;
         */
+    }
+
+    [AjaxMethod(HttpSessionStateRequirement.ReadWrite)]
+    public string updateEmployee(string Department, string City, string Street, long HouseNo)
+    {
+        Employee employee = Employee.Giris(SessionObjects.AccountObject.EmpId);
+
+        employee.Department = Department;
+        employee.City = City;
+        employee.Street = Street;
+        employee.HouseNumber = HouseNo;
+        employee.Update();
+
+        return "ss";
     }
 
 }

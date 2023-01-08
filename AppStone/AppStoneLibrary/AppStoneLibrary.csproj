@@ -49,6 +49,7 @@
     <Compile Include="Tables\App.cs" />
     <Compile Include="Tables\Customer.cs" />
     <Compile Include="Tables\Employee.cs" />
+    <Compile Include="Tables\Payment.cs" />
     <Compile Include="Tables\Project.cs" />
     <Compile Include="Tables\Sale.cs" />
     <Compile Include="Tables\SaleInfo.cs" />

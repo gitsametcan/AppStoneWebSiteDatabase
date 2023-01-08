@@ -84,5 +84,20 @@ namespace AppStoneLibrary.Tables
 
             return sb.ToString();
         }
+
+        public void Add(DateTime star, long cstıd)
+        {
+            Islemler.SorguDisi("INSERT INTO Sale(SaleId, DeliveryDate, Company, ProjId,TotalPrice) " +
+                "values (@1 , @2 , @3 , @4, @5)", new object[] { SaleId, DeliveryDate, Company, ProjId,TotalPrice });
+
+            DataTable dt = Islemler.Sorgu("Select Count(*) from Contracts", new object[] {  });
+            DataRow dr = dt.Rows[0];
+            long id = GenelParser.ParseLong(dr[0].ToString()) + 1;
+
+
+
+            Islemler.SorguDisi("INSERT INTO Contracts(ContractId, EndDate, CstId) " +
+                "values (@1 , @2 , @3)", new object[] { id, star, cstıd });
+        }
     }
 }
