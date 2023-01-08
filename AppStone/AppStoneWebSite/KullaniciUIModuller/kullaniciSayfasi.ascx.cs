@@ -42,7 +42,7 @@ public partial class KullaniciUIModuller_kullaniciSayfasi : System.Web.UI.UserCo
     }
 
     [AjaxMethod(HttpSessionStateRequirement.ReadWrite)]
-    public string updateEmployee(string Department, string City, string Street, long HouseNo)
+    public string updateEmployee(string Department, long HouseNo, string City, string Street)
     {
         Employee employee = Employee.Giris(SessionObjects.AccountObject.EmpId);
 
