@@ -211,7 +211,7 @@
        <li class="nav-item">
         <a class="nav-link collapsed" href="Default.aspx?s=anaSayfa">
           <i class="bi bi-question-circle"></i>
-          <span>Ana Sayfa</span>
+          <span>Own Projects</span>
         </a>
       </li>
 
@@ -226,19 +226,19 @@
         <li class="nav-item">
         <a class="nav-link collapsed" href="Default.aspx?s=takiplesme">
           <i class="bi bi-question-circle"></i>
-          <span>Kimi Takip Etmeli</span>
+          <span>Function</span>
         </a>
       </li>
        <li class="nav-item">
         <a class="nav-link collapsed" href="Default.aspx?s=profil">
           <i class="bi bi-person"></i>
-          <span>Profil</span>
+          <span>Profile</span>
         </a>
         </li>   
         <li class="nav-item">
           <a class="nav-link collapsed" href="Login.aspx">
           <i class="bi bi-box-arrow-in-left"></i>
-          <span>Çıkış</span>
+          <span>Out</span>
         </a>
       </li>
 

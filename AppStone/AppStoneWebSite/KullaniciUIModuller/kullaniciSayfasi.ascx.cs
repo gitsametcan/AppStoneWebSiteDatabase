@@ -21,7 +21,7 @@ public partial class KullaniciUIModuller_kullaniciSayfasi : System.Web.UI.UserCo
         kullaniciIsmi.InnerHtml = employee.FirstName + " " + employee.LastName;
         department.InnerHtml = employee.Department;
         birthdate.InnerHtml = employee.Birthdate.ToString("d");
-        hourlyrate.InnerHtml = employee.HourlyRate.ToString();
+        hourlyrate.InnerHtml = employee.HourlyRate.ToString()+"£";
         address.InnerHtml = employee.Street + " " + employee.HouseNumber.ToString() + " " + employee.City;
         emptip.InnerHtml = employee.EmploymentType;
         manager.InnerHtml = employee.MgrId.ToString();

@@ -53,7 +53,7 @@ public partial class _Default : System.Web.UI.Page
 
         sb.Append("<a class=\"nav-link collapsed\" href=\"Default.aspx?s=kullaniciSayfasi&id=" + SessionObjects.AccountObject.EmpId + "\">");
         sb.Append("  <i class=\"bi bi-layout-text-window-reverse\"></i>");
-        sb.Append("  <span>Kullanıcı Sayfası</span>");
+        sb.Append("  <span>My Informations</span>");
         sb.Append("</a>");
 
         return sb.ToString();
@@ -65,7 +65,7 @@ public partial class _Default : System.Web.UI.Page
 
         sb.Append("<a class=\"nav-link collapsed\" href=\"Default.aspx?s=adminSayfasi\">");
         sb.Append("  <i class=\"bi bi-layout-text-window-reverse\"></i>");
-        sb.Append("  <span>Admin Sayfası</span>");
+        sb.Append("  <span>Manager Page</span>");
         sb.Append("</a>");
 
         return sb.ToString();

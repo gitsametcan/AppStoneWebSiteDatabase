@@ -1,4 +1,26 @@
-﻿var _kullaniciId = -1;
+﻿function addEmployee() {
+
+
+    beklemeyeAl();
+    ADMINSAYFASI_AJAX.addEmployee($("#fName").val(), $("#lName").val(), $("#Department").val(), $("#BirthDate").val(), $("#HourlyRate").val(),
+        $("#City").val(), $("#Street").val(), $("#HouseNumber").val(), $("#Gender").val(), _addEmployeeResult);
+}
+
+function _addEmployeeResult() {
+    beklemedenCik();
+}
+
+function updateEmployee(empId) {
+
+
+    beklemeyeAl();
+    ADMINSAYFASI_AJAX.updateEmployee(empId, $("#Department").val(), $("#HourlyRate").val(),
+        $("#City").val(), $("#Street").val(), $("#HouseNo".val(), _updateEmployeeResult);
+}
+
+function _updateEmployeeResult() {
+    beklemedenCik();
+}
 
 function blokla(kullaniciId) {
 

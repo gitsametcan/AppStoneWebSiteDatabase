@@ -17,7 +17,7 @@
 
 
  <div class="pagetitle">
-      <h1>Kullanıcı Sayfası</h1>
+      <h1>My Informations</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
@@ -48,10 +48,10 @@
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Bilgiler</button>
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">My Informations</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Paylaşımlar</button>
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Function</button>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
