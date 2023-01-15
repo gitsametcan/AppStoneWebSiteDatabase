@@ -32,32 +32,7 @@
   </div>
     <div class="tab-pane fade" id="employee" role="tabpanel" aria-labelledby="profile-tabe">
 
-      <div id="employees" runat="server"> </div>
-
-  </div>
-
-
-
-
-              
-              </div><!-- End Bordered Tabs -->
-
-            </div>
-          </div>
-
-        </div>
-
-<div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-        <!-- Login Form -->
-        <form action="">
-          <div class="modal-header">
-            <h5 class="modal-title">Add Employee</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="mb-3">
+      <div class="mb-3">
                 <input type ="text" class="form-control" id="fName" placeholder="First Name" value="">
             </div>
               <div class="mb-3">
@@ -84,6 +59,35 @@
               <div class="mb-3">
                 <input type ="text" class="form-control" id="Gender" placeholder="Gender: m or f" value="">
             </div>
+
+         <div class="modal-footer pt-4">                 
+            <button type="button" class="btn btn-success mx-auto w-100" onclick=addEmployee();>Add Employee</button>
+          </div>
+
+  </div>
+
+
+
+
+              
+              </div><!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+        </div>
+
+<div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <!-- Login Form -->
+        <form action="">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Employee</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
             
 
           </div>
@@ -93,10 +97,4 @@
       </form>
     </div>
   </div>
-</div>
-
-<div id="myModal" class="modal">
-  <span class="close" onclick="modalKapat();">&times;</span>
-  <div class="modal-content" align="center" id="modalContent"></div>
-  <div id="caption"></div>
 </div>

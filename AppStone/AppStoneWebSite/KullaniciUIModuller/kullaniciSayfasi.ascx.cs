@@ -29,16 +29,6 @@ public partial class KullaniciUIModuller_kullaniciSayfasi : System.Web.UI.UserCo
 
         Div1.InnerHtml = Employee.employeeHtmlUpdatable(employee);
 
-
-
-        /*
-        Kullanici kullanici = Kullanici.Getir(GenelParser.ParseInt(Request.QueryString["id"]));
-        //Kullanici kullanici = Kullanici.Getir(SessionNesneleri.KullaniciObj.Id);
-        icerikBu.InnerHtml = divIcerikInnerHtmlOlustur(kullanici);
-        fotovead.InnerHtml = adVeFotoAyarla(kullanici);
-        kullaniciIsmi.InnerHtml = kullanici.Ad + " " + kullanici.Soyad;
-        kullaniciMail.InnerHtml = kullanici.EPosta;
-        */
     }
 
     [AjaxMethod(HttpSessionStateRequirement.ReadWrite)]

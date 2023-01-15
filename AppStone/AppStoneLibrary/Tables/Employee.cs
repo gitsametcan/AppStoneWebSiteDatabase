@@ -48,6 +48,7 @@ namespace AppStoneLibrary.Tables
             Birthdate = GenelParser.ParseDateTime(dr["Birthdate"].ToString());
             Age = GenelParser.ParseLong(dr["Age"].ToString());
             HourlyRate = dr["HourlyRate"].ToString();
+            HourlyRate = HourlyRate.Substring(0, HourlyRate.Length - 5);
             EmploymentType = dr["EmploymentType"].ToString();
             City = dr["City"].ToString();
             Street = dr["Street"].ToString();

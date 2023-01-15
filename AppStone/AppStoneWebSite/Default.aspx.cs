@@ -41,7 +41,6 @@ public partial class _Default : System.Web.UI.Page
         StringBuilder sb = new StringBuilder();
 
         sb.Append("<a class=\"nav-link nav-profile d-flex align-items-center pe-0\" href=\"#\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">");
-        //sb.Append("   <img  style=\"width: 45px; height: 45px;\"  src = \"profilFotoImages/" + SessionNesneleri.KullaniciObj.ProfilFoto + "\" alt=\"Profile\" class=\"rounded-circle\">");
         sb.Append("   <span class=\"d -none d-md-block dropdown-toggle ps-2\">" + employee.FirstName + " " + employee.LastName + "</span>");
         sb.Append("</a>");
         return sb.ToString();

@@ -1,6 +1,5 @@
 ﻿function addEmployee() {
-
-
+    
     beklemeyeAl();
     ADMINSAYFASI_AJAX.addEmployee($("#fName").val(), $("#lName").val(), $("#Department").val(), $("#BirthDate").val(), $("#HourlyRate").val(),
         $("#City").val(), $("#Street").val(), $("#HouseNumber").val(), $("#Gender").val(), _addEmployeeResult);
